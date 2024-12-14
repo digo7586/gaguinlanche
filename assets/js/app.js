@@ -372,7 +372,7 @@ cardapio.metodos = {
         VALOR_CARRINHO = 0;
 
         $("#lblSubTotal").text('R$ 0,00');
-        $("#lblValorEntrega").text('+ R$ 0,00');
+        $("#lblValorEntrega").text('+ R$ 5,00');
         $("#lblValorTotal").text('R$ 0,00');
 
         $.each(MEU_CARRINHO, (i, e) => {
