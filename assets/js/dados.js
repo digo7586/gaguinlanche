@@ -52,7 +52,7 @@ var MENU = {
             "id": "07-BrócolisM",
             "img": "assets/img/cardapio/burguers/handf-double-stack-burger-kit-for-4.4ee9f54b1d6087e9996335f07c13e5cd.jpg",
             "name": "Cachorro quente",
-            "title": "Alface, tomate, milho, batata palha, salsicha, ketchup, maionese.",
+            "title": "Pão baguete, Alface, tomate, milho, batata palha, salsicha, ketchup, maionese.",
             "dsc": "",
             "price": 16.00
         },
@@ -60,7 +60,7 @@ var MENU = {
             "id": "08-CalabresalM",
             "img": "assets/img/cardapio/burguers/the-burger-bash-package.bd9d12d031865940bbe5faf15f1a62f8.jpg",
             "name": "Lanche Calabresa",
-            "title": "Alface, tomate, cebola, calabresa, queijo, ketchup, maionese, chedder.",
+            "title": "Pão baguete, Alface, tomate, cebola, calabresa, queijo, ketchup, maionese, chedder.",
             "dsc": "",
             "price": 23.00
         },
@@ -68,7 +68,7 @@ var MENU = {
             "id": "09-CalabresaEspecialM",
             "img": "assets/img/cardapio/burguers/burger-au-poivre-kit-4-pack.3ca0e39b02db753304cd185638dad518.jpg",
             "name": "Lanche Pernil",
-            "title": "Rúcula, cebola, pernil, vinagrete, barbecue.",
+            "title": "Pão baguete, Rúcula, cebola, pernil, vinagrete, barbecue.",
             "dsc": "",
             "price": 25.00
         },
@@ -76,8 +76,8 @@ var MENU = {
             "id": "10-ContraFileM",
             "img": "assets/img/cardapio/burguers/gaguinho.jpg",
             "name": "Lanche Coração",
-            "title": "Alface, tomate, cebola, coração, ketchup, maionese.",
-            "dsc": "M 8 pdç",
+            "title": "Pão baguete, Alface, tomate, cebola, coração, ketchup, maionese.",
+            "dsc": "",
             "price": 30.00
         },
         {
@@ -85,15 +85,15 @@ var MENU = {
             "img": "assets/img/cardapio/burguers/Gramercy-Tavern-Burger-and-Kielbasa-Kit-6.4.21-72ppi-1x1-47.jpg",
             "name": "Hambúrguer Duplo",
             "title": "hambúrguer, alface, tomate, bacon, queijo.",
-            "dsc": "M 8 pdç",
+            "dsc": "",
             "price": 18.00
         },
         {
             "id": "12-FrangoCatupiryP",
             "img": "assets/img/cardapio/burguers/Gramercy-Tavern-Burger-and-Kielbasa-Kit-6.4.21-72ppi-1x1-15.jpg",
             "name": "cachorrão",
-            "title": "Alface, tomate, bacon, milho, batata palha, 2 salsicha, ketchup, maionese.",
-            "dsc": "P 4 pdç",
+            "title": "Pão baguete, Alface, tomate, bacon, milho, batata palha, 2 salsicha, ketchup, maionese.",
+            "dsc": "",
             "price": 22.00
         }
     ],
