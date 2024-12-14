@@ -2,7 +2,7 @@ var MENU = {
     "burgers": [
         {
             "id": "05-BauruM",
-            "img": "assets/img/cardapio/gourmet.png",
+            "img": "assets/img/cardapio/pizzas/gourmet.png",
             "name": "Hambúrguer gourmet",
             "title": "Pão de hambúrguer, 150g hambúrguer artesanal, bacon, queijo prato patê de alho, alface, tomate ketchup, maionese.",
             "dsc": "",
@@ -10,7 +10,7 @@ var MENU = {
         },
         {
             "id": "09-CalabresaEspecialM",
-            "img": "assets/img/cardapio/pernil.png",
+            "img": "assets/img/cardapio/pizzas/pernil.png",
             "name": "Lanche Pernil",
             "title": "Pão baguete, Rúcula, cebola, pernil, vinagrete, barbecue.",
             "dsc": "",
@@ -18,7 +18,7 @@ var MENU = {
         },
         {
             "id": "01-AmericanaM",
-            "img": "assets/img/cardapio/cosela.png",
+            "img": "assets/img/cardapio/pizzas/cosela.png",
             "name": "Lanche Costela",
             "title": "Pão baguete, costela, queijo, cebola, bacon, patê de alho, queijo prato, alface tomate, ketchup, maionese.",
             "dsc": "",
@@ -26,7 +26,7 @@ var MENU = {
         },
         {
             "id": "02-AtumM",
-            "img": "assets/img/cardapio/linguica.png",
+            "img": "assets/img/cardapio/pizzas/linguica.png",
             "name": "Lanche Linguiça",
             "title": "Pão baguete, linguiça, queijo, cebola, bacon, patê de alho queijo prato, rúcula, tomate ketchup, maionese.",
             "dsc": "",
@@ -34,7 +34,7 @@ var MENU = {
         },
         {
             "id": "03-BaconM",
-           "img": "assets/img/cardapio/frango.jpeg",
+           "img": "assets/img/cardapio/pizzas/frango.jpeg",
             "name": "Lanche Frango",
             "title": "Pão baguete, frango, queijo, cebola, bacon, patê de alho queijo prato, alface, tomate ketchup, maionese.",
             "dsc": "",
@@ -42,7 +42,7 @@ var MENU = {
         },
         {
             "id": "04-BaianinhaM",
-            "img": "assets/img/cardapio/contra-file.PNG",
+            "img": "assets/img/cardapio/pizzas/contra-file.PNG",
             "name": "Lanche Contra filé",
             "title": "Pão baguete, contra filé, queijo, cebola, bacon, patê de alho queijo prato, alface, tomate ketchup, maionese.",
             "dsc": "",
@@ -51,7 +51,7 @@ var MENU = {
         
         {
             "id": "06-BrasileiraM",
-            "img": "assets/img/cardapio/simples.png",
+            "img": "assets/img/cardapio/pizzas/simples.png",
             "name": "Hambúrguer simples",
             "title": "Pão de hambúrguer, hambúrguer tradicional, queijo mussarela, alface, tomate ketchup, maionese.",
             "dsc": "",
@@ -60,7 +60,7 @@ var MENU = {
         
         {
             "id": "08-CalabresalM",
-            "img": "assets/img/cardapio/calabresa.jpg",
+            "img": "assets/img/cardapio/pizzas/calabresa.jpg",
             "name": "Lanche Calabresa",
             "title": "Pão baguete, Alface, tomate, cebola, calabresa, queijo, ketchup, maionese, chedder.",
             "dsc": "",
@@ -68,7 +68,7 @@ var MENU = {
         },
         {
             "id": "10-ContraFileM",
-            "img": "assets/img/cardapio/coracao.jpeg",
+            "img": "assets/img/cardapio/pizzas/coracao.jpeg",
             "name": "Lanche Coração",
             "title": "Pão baguete, Alface, tomate, cebola, coração, ketchup, maionese.",
             "dsc": "",
@@ -76,7 +76,7 @@ var MENU = {
         },
         {
             "id": "11-CrocanteM",
-            "img": "assets/img/cardapio/duplo.PNG",
+            "img": "assets/img/cardapio/pizzas/duplo.PNG",
             "name": "Hambúrguer Duplo",
             "title": "hambúrguer, alface, tomate, bacon, queijo.",
             "dsc": "",
@@ -84,7 +84,7 @@ var MENU = {
         },
         {
             "id": "07-BrócolisM",
-            "img": "assets/img/cardapio/doog.jpeg",
+            "img": "assets/img/cardapio/pizzas/doog.jpeg",
             "name": "Cachorro quente",
             "title": "Pão baguete, Alface, tomate, milho, batata palha, salsicha, ketchup, maionese.",
             "dsc": "",
@@ -92,7 +92,7 @@ var MENU = {
         },
         {
             "id": "12-FrangoCatupiryP",
-            "img": "assets/img/cardapio/cachorrao.png",
+            "img": "assets/img/cardapio/pizzas/cachorrao.png",
             "name": "cachorrão",
             "title": "Pão baguete, Alface, tomate, bacon, milho, batata palha, 2 salsicha, ketchup, maionese.",
             "dsc": "",
