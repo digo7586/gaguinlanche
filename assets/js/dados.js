@@ -1,8 +1,24 @@
 var MENU = {
     "burgers": [
         {
+            "id": "05-BauruM",
+            "img": "assets/img/cardapio/burguers/gourmet.png",
+            "name": "Hambúrguer gourmet",
+            "title": "Pão de hambúrguer, 150g hambúrguer artesanal, bacon, queijo prato patê de alho, alface, tomate ketchup, maionese.",
+            "dsc": "",
+            "price": 20.00
+        },
+        {
+            "id": "09-CalabresaEspecialM",
+            "img": "assets/img/cardapio/burguers/pernil.png",
+            "name": "Lanche Pernil",
+            "title": "Pão baguete, Rúcula, cebola, pernil, vinagrete, barbecue.",
+            "dsc": "",
+            "price": 25.00
+        },
+        {
             "id": "01-AmericanaM",
-            "img": "assets/img/cardapio/burguers/gaguinho.jpg",
+            "img": "assets/img/cardapio/burguers/cosela.png",
             "name": "Lanche Costela",
             "title": "Pão baguete, costela, queijo, cebola, bacon, patê de alho, queijo prato, alface tomate, ketchup, maionese.",
             "dsc": "",
@@ -10,7 +26,7 @@ var MENU = {
         },
         {
             "id": "02-AtumM",
-            "img": "assets/img/cardapio/burguers/shake-shack-shackburger-8-pack.973a5e26836ea86d7e86a327becea2b0.jpg",
+            "img": "assets/img/cardapio/burguers/linguica.png",
             "name": "Lanche Linguiça",
             "title": "Pão baguete, linguiça, queijo, cebola, bacon, patê de alho queijo prato, rúcula, tomate ketchup, maionese.",
             "dsc": "",
@@ -18,7 +34,7 @@ var MENU = {
         },
         {
             "id": "03-BaconM",
-           "img": "assets/img/cardapio/burguers/gotts-complete-cheeseburger-kit-for-4.7bdc74104b193427b3fe6eae39e05b5e.jpg",
+           "img": "assets/img/cardapio/burguers/frango.jpeg",
             "name": "Lanche Frango",
             "title": "Pão baguete, frango, queijo, cebola, bacon, patê de alho queijo prato, alface, tomate ketchup, maionese.",
             "dsc": "",
@@ -26,55 +42,33 @@ var MENU = {
         },
         {
             "id": "04-BaianinhaM",
-            "img": "assets/img/cardapio/burguers/le-big-matt-kit-for-6.1ddae6e382bb3218eeb0fd5247de115a.jpg",
+            "img": "assets/img/cardapio/burguers/contra-file.PNG",
             "name": "Lanche Contra filé",
             "title": "Pão baguete, contra filé, queijo, cebola, bacon, patê de alho queijo prato, alface, tomate ketchup, maionese.",
             "dsc": "",
             "price": 30.00
         },
-        {
-            "id": "05-BauruM",
-            "img": "assets/img/cardapio/burguers/Gramercy-Tavern-Burger-and-Kielbasa-Kit-6.4.21-72ppi-1x1-15.jpg",
-            "name": "Hambúrguer gourmet",
-            "title": "Pão de hambúrguer, 150g hambúrguer artesanal, bacon, queijo prato patê de alho, alface, tomate ketchup, maionese.",
-            "dsc": "",
-            "price": 20.00
-        },
+        
         {
             "id": "06-BrasileiraM",
-            "img": "assets/img/cardapio/burguers/usda-prime-burgers-pack-of-18-8oz-each.274c67f15aa1c0b210dbf51801706670.jpg",
+            "img": "assets/img/cardapio/burguers/simples.png",
             "name": "Hambúrguer simples",
             "title": "Pão de hambúrguer, hambúrguer tradicional, queijo mussarela, alface, tomate ketchup, maionese.",
             "dsc": "",
             "price": 15.00
         },
-        {
-            "id": "07-BrócolisM",
-            "img": "assets/img/cardapio/burguers/handf-double-stack-burger-kit-for-4.4ee9f54b1d6087e9996335f07c13e5cd.jpg",
-            "name": "Cachorro quente",
-            "title": "Pão baguete, Alface, tomate, milho, batata palha, salsicha, ketchup, maionese.",
-            "dsc": "",
-            "price": 16.00
-        },
+        
         {
             "id": "08-CalabresalM",
-            "img": "assets/img/cardapio/burguers/the-burger-bash-package.bd9d12d031865940bbe5faf15f1a62f8.jpg",
+            "img": "assets/img/cardapio/burguers/calabresa.jpg",
             "name": "Lanche Calabresa",
             "title": "Pão baguete, Alface, tomate, cebola, calabresa, queijo, ketchup, maionese, chedder.",
             "dsc": "",
             "price": 23.00
         },
         {
-            "id": "09-CalabresaEspecialM",
-            "img": "assets/img/cardapio/burguers/burger-au-poivre-kit-4-pack.3ca0e39b02db753304cd185638dad518.jpg",
-            "name": "Lanche Pernil",
-            "title": "Pão baguete, Rúcula, cebola, pernil, vinagrete, barbecue.",
-            "dsc": "",
-            "price": 25.00
-        },
-        {
             "id": "10-ContraFileM",
-            "img": "assets/img/cardapio/burguers/gaguinho.jpg",
+            "img": "assets/img/cardapio/burguers/coracao.jpeg",
             "name": "Lanche Coração",
             "title": "Pão baguete, Alface, tomate, cebola, coração, ketchup, maionese.",
             "dsc": "",
@@ -82,15 +76,23 @@ var MENU = {
         },
         {
             "id": "11-CrocanteM",
-            "img": "assets/img/cardapio/burguers/Gramercy-Tavern-Burger-and-Kielbasa-Kit-6.4.21-72ppi-1x1-47.jpg",
+            "img": "assets/img/cardapio/burguers/duplo.PNG",
             "name": "Hambúrguer Duplo",
             "title": "hambúrguer, alface, tomate, bacon, queijo.",
             "dsc": "",
             "price": 18.00
         },
         {
+            "id": "07-BrócolisM",
+            "img": "assets/img/cardapio/burguers/doog.jpeg",
+            "name": "Cachorro quente",
+            "title": "Pão baguete, Alface, tomate, milho, batata palha, salsicha, ketchup, maionese.",
+            "dsc": "",
+            "price": 16.00
+        },
+        {
             "id": "12-FrangoCatupiryP",
-            "img": "assets/img/cardapio/burguers/Gramercy-Tavern-Burger-and-Kielbasa-Kit-6.4.21-72ppi-1x1-15.jpg",
+            "img": "assets/img/cardapio/burguers/cachorrao.png",
             "name": "cachorrão",
             "title": "Pão baguete, Alface, tomate, bacon, milho, batata palha, 2 salsicha, ketchup, maionese.",
             "dsc": "",
