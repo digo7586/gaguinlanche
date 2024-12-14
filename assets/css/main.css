@@ -148,10 +148,10 @@ a.navbar-brand {
     height: 450px;
     width: 450px;
     border-radius: 170px;
-    background-color: #F59E0C;
+    background-color: #f0a21c;
     position: absolute;
     right: 0;
-    top: -50px;
+    top: -20px;
 }
 
 .img-banner img {
@@ -488,8 +488,14 @@ footer {
     background-color: var(--color-secondary);
 }
 
-.logo-footer {
-    width: 100px;
+.img-logo {
+    width: 70px;
+    border-radius: 50%;
+}
+
+.logo-footer  {
+    width: 60px;
+    border-radius: 50%;
 }
 
 .container-logo-footer, .container-texto-footer, .container-redes-footer {
