@@ -68,7 +68,7 @@ var MENU = {
         },
         {
             "id": "10-ContraFileM",
-            "img": "assets/img/cardapio/pizzas/coracao.jpeg",
+            "img": "assets/img/cardapio/pizzas/0.png",
             "name": "Lanche Coração",
             "title": "Pão baguete, Alface, tomate, cebola, coração, ketchup, maionese.",
             "dsc": "",
