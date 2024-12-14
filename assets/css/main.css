@@ -614,7 +614,73 @@ footer {
 .title-carrinho {
     font-size: 20px;
     color: var(--color-black);
+    font-weight: bold;
 }
+
+/* Configuração do layout principal */
+.form-check {
+    display: flex;
+    flex-direction: column; /* Coloca as seções uma embaixo da outra */
+    width: 100%; /* Garante que o container ocupe toda a largura disponível */
+}
+
+.opcao-entrega, .opcao-pagamento {
+    display: flex;
+    justify-content: space-between; /* Espaça as opções igualmente dentro da linha */
+    width: 100%;
+}
+
+.opcao-entrega label, .opcao-pagamento label {
+    display: inline-block;
+    margin-right: 10px; /* Espaçamento entre as opções */
+}
+
+/* Linha divisória */
+hr {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 10px 0; /* Adiciona algum espaço acima e abaixo da linha */
+}
+
+/* Garantir que as opções de pagamento fiquem em linha quando a tela for grande */
+@media (max-width: 767px) {
+    .opcao-entrega {
+        flex-direction: column; /* Alinha as opções de entrega em uma coluna */
+    }
+
+    .opcao-pagamento {
+        flex-direction: column; /* Alinha as opções de pagamento em uma coluna */
+    }
+}
+
+/* Aplica a cor ao fundo e ao foco do input */
+#nomeCliente {
+    background-color: #f7e583; /* Cor de fundo clara (alice blue) */
+    color: #333; /* Cor do texto */
+    border: 1px solid #ccc; /* Borda suave e discreta */
+    padding: 8px; /* Espaçamento interno */
+    border-radius: 4px; /* Borda arredondada */
+    font-size: 14px; /* Tamanho da fonte */
+}
+
+/* Alterações na cor do fundo quando o input está em foco */
+#nomeCliente:focus {
+    background-color: #e0f7fa; /* Fundo mais claro quando em foco */
+    border-color: #0097a7; /* Cor da borda em foco */
+    outline: none; /* Remove o contorno padrão do navegador */
+}
+
+/* Cor da borda quando o input está preenchido */
+#nomeCliente:valid {
+    border-color: #4caf50; /* Verde claro para indicar validade */
+}
+
+/* Cor da borda se houver erro (campo inválido) */
+#nomeCliente:invalid {
+    border-color: #f44336; /* Vermelho para indicar erro */
+}
+
+
 
 .modal-full .item-carrinho {
     display: flex;
