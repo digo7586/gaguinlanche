@@ -20,7 +20,7 @@ var MEU_ENDERECO = null;
 var VALOR_CARRINHO = 0;
 var VALOR_ENTREGA = 0;
 
-var CELULAR_EMPRESA = '5519999429988';
+var CELULAR_EMPRESA = '5511962795416';
 
 cardapio.eventos = {
 
@@ -480,7 +480,10 @@ cardapio.metodos = {
     resumoPedido: () => {
         const radioRetirada = document.getElementById('retirada');
         const radioEntrega = document.getElementById('entrega');
-    
+        const radioDebito = document.getElementById('debito');
+        const radioCredito = document.getElementById('credito');
+        const radioPix = document.getElementById('pix');
+        
         // Função para desabilitar ou habilitar campos com base na opção selecionada
         function toggleEnderecoFields() {
             const isRetiradaChecked = radioRetirada.checked;
@@ -526,6 +529,7 @@ cardapio.metodos = {
         let numero = $("#txtNumero").val().trim();
         let complemento = $("#txtComplemento").val().trim();
     
+        // Validações dos campos de endereço
         if (cep.length <= 0) {
             cardapio.metodos.mensagem('Informe o CEP, por favor.');
             $("#txtCEP").focus();
@@ -562,6 +566,7 @@ cardapio.metodos = {
             return;
         }
     
+        // Armazena o endereço
         MEU_ENDERECO = {
             cep: cep,
             endereco: endereco,
@@ -572,16 +577,38 @@ cardapio.metodos = {
             complemento: complemento
         };
     
+        // Captura a forma de pagamento selecionada
+        let formaPagamento = '';
+        if (radioDebito.checked) {
+            formaPagamento = 'Débito';
+        } else if (radioCredito.checked) {
+            formaPagamento = 'Crédito';
+        } else if (radioPix.checked) {
+            formaPagamento = 'Pix';
+        } else {
+            cardapio.metodos.mensagem('Escolha uma forma de pagamento.');
+            return;
+        }
+    
+        // Exibe o resumo com forma de pagamento
+        $("#formaPagamentoResumo").text(`Forma de pagamento: ${formaPagamento}`);
+    
+        // Atualiza o resumo com os dados do endereço
+        let resumoEndereco = `${MEU_ENDERECO.endereco}, ${MEU_ENDERECO.numero} - ${MEU_ENDERECO.bairro} - ${MEU_ENDERECO.cidade} - ${MEU_ENDERECO.uf}`;
+        $("#resumoEndereco").text(resumoEndereco);
+    
+        // Atualiza a etapa e carrega o resumo
         cardapio.metodos.carregarEtapa(3);
         cardapio.metodos.carregarResumo();
     },
     
-   // Carrega a etapa de Resumo do pedido
+  // Carrega a etapa de Resumo do pedido
 carregarResumo: () => {
     let nomeRetirada = document.getElementById('nomeCliente').value;
 
     $("#listaItensResumo").html('');
 
+    // Exibe os itens do carrinho
     $.each(MEU_CARRINHO, (i, e) => {
         let temp = cardapio.templates.itemResumo.replace(/\${img}/g, e.img)
             .replace(/\${nome}/g, e.name)
@@ -609,14 +636,13 @@ carregarResumo: () => {
         // Exibe o nome do cliente
         $('#nomeCli').text(nomeRetirada);
 
-        
         // Atualiza o título para 'Endereço de retirada'
-        $(".retiradas").html('<b>Endereço de retirada:</b>');
-        
+        $(".retiradas").html('<b>Endereço:</b>');
+
         // Exibe o endereço da pizzaria
         $("#resumoEndereco").html('Av Eugênia Fazanario Pedroso, n°287, Iracemápolis');
         $("#cidadeEndereco").html('Iracemápolis-SP');
-        
+
         // Oculta o valor da entrega
         $("#valorEntrega").hide();
 
@@ -629,9 +655,10 @@ carregarResumo: () => {
         // Mostra a seção de endereço da pizzaria
         $("#resumoEndereco").show();
         $("#cidadeEndereco").show();
+
     } else {
-         // Exibe o nome do cliente
-         $('#nomeCli').text(nomeRetirada);
+        // Exibe o nome do cliente
+        $('#nomeCli').text(nomeRetirada);
 
         // Exibe o endereço fornecido pelo cliente
         $("#resumoEndereco").html(`${MEU_ENDERECO.endereco}, ${MEU_ENDERECO.numero}, ${MEU_ENDERECO.bairro}`);
@@ -639,70 +666,102 @@ carregarResumo: () => {
 
         // Atualiza o valor total com entrega
         $("#lblValorTotal").text(`R$ ${(VALOR_CARRINHO + VALOR_ENTREGA).toFixed(2).replace('.', ',')}`);
-        
+
         // Atualiza o título para 'Local da Entrega'
-        $(".retiradas").html('<b>Local da entrega:</b>');
-        
+        $(".retiradas").html('<b>Local:</b>');
+
         // Mostra a seção de endereço do cliente
         $("#resumoEndereco").show();
         $("#cidadeEndereco").show();
     }
 
+    // Captura a forma de pagamento selecionada
+    let formaPagamento = '';
+    if (document.getElementById('debito').checked) {
+        formaPagamento = 'Débito';
+    } else if (document.getElementById('credito').checked) {
+        formaPagamento = 'Crédito';
+    } else if (document.getElementById('pix').checked) {
+        formaPagamento = 'Pix';
+    } else {
+        formaPagamento = 'Não selecionado';
+    }
+
+    // Exibe a forma de pagamento no resumo
+    $("#formaPagamentoResumo").text(`Forma de pagamento: ${formaPagamento}`);
+
+    // Finaliza o pedido
     cardapio.metodos.finalizarPedido();
 },
 
 
 
-    // Atualiza o link do botão do WhatsApp
-    finalizarPedido: () => {
-        let nomeRetirada = document.getElementById('nomeCliente').value.trim(); // Remove espaços em branco
 
-        if (MEU_CARRINHO.length > 0) {
-    
-            // Cria a mensagem inicial com o nome do cliente
-            var texto = `Olá! Me chamo ${nomeRetirada} e gostaria de fazer um pedido:`;
-            texto += `\n\n*Itens do pedido:*\n`;
-    
-            var itens = '';
-    
-            $.each(MEU_CARRINHO, (i, e) => {
-                itens += `*${e.qntd}x* ${e.name} ${e.dsc} .. R$ ${e.price.toFixed(2).replace('.', ',')} \n`;
-    
-                // Último item
-                if ((i + 1) == MEU_CARRINHO.length) {
-                    texto += itens; // Adiciona os itens ao texto
-    
-                    // Verifica se é retirada ou entrega
-                    if (document.getElementById('retirada').checked) {
-                        // Se 'Retirada' estiver selecionado, mostra o endereço da pizzaria
-                        texto += '\n\n*Vou retirar*';
-                        
-                        
-                        // Total sem valor da entrega
-                        texto += `\n\n*Total: R$ ${VALOR_CARRINHO.toFixed(2).replace('.', ',')}*`;
-                    } else {
-                        // Se 'Entrega' estiver selecionado, mostra o endereço do cliente
-                        texto += '\n\n*Endereço de entrega:*';
-                        texto += `\n${MEU_ENDERECO.endereco}, ${MEU_ENDERECO.numero}, ${MEU_ENDERECO.bairro}`;
-                        texto += `\n${MEU_ENDERECO.cidade}-${MEU_ENDERECO.uf} / ${MEU_ENDERECO.cep} ${MEU_ENDERECO.complemento}`;
-                        
-                        // Total com valor da entrega
-                        texto += `\n\n*Total (com entrega): R$ ${(VALOR_CARRINHO + VALOR_ENTREGA).toFixed(2).replace('.', ',')}*`;
-                    }
-    
-                    // Converte a URL
-                    let encode = encodeURI(texto);
-                    let URL = `https://wa.me/${CELULAR_EMPRESA}?text=${encode}`;
-    
-                    // Atualiza o botão com o link do WhatsApp
-                    $("#btnEtapaResumo").attr('href', URL);
+   // Atualiza o link do botão do WhatsApp
+finalizarPedido: () => {
+    let nomeRetirada = document.getElementById('nomeCliente').value.trim(); // Remove espaços em branco
+
+    if (MEU_CARRINHO.length > 0) {
+
+        // Cria a mensagem inicial com o nome do cliente
+        var texto = `Olá! Me chamo ${nomeRetirada} e gostaria de fazer um pedido:`;
+        texto += `\n\n*Itens do pedido:*\n`;
+
+        var itens = '';
+
+        $.each(MEU_CARRINHO, (i, e) => {
+            itens += `*${e.qntd}x* ${e.name} ${e.dsc} .. R$ ${e.price.toFixed(2).replace('.', ',')} \n`;
+
+            // Último item
+            if ((i + 1) == MEU_CARRINHO.length) {
+                texto += itens; // Adiciona os itens ao texto
+
+                // Verifica se é retirada ou entrega
+                if (document.getElementById('retirada').checked) {
+                    // Se 'Retirada' estiver selecionado, mostra o endereço da pizzaria
+                    texto += '\n\n*Vou retirar*';
+
+                    // Total sem valor da entrega
+                    texto += `\n\n*Total: R$ ${VALOR_CARRINHO.toFixed(2).replace('.', ',')}*`;
+                } else {
+                    // Se 'Entrega' estiver selecionado, mostra o endereço do cliente
+                    texto += '\n\n*Endereço de entrega:*';
+                    texto += `\n${MEU_ENDERECO.endereco}, ${MEU_ENDERECO.numero}, ${MEU_ENDERECO.bairro}`;
+                    texto += `\n${MEU_ENDERECO.cidade}-${MEU_ENDERECO.uf} / ${MEU_ENDERECO.cep} ${MEU_ENDERECO.complemento}`;
+
+                    // Total com valor da entrega
+                    texto += `\n\n*Total (com entrega): R$ ${(VALOR_CARRINHO + VALOR_ENTREGA).toFixed(2).replace('.', ',')}*`;
                 }
-            });
-    
-        } else {
-            console.log("Nenhum item no carrinho.");
-        }
-    },
+
+                // Captura a forma de pagamento
+                let formaPagamento = '';
+                if (document.getElementById('debito').checked) {
+                    formaPagamento = 'Débito';
+                } else if (document.getElementById('credito').checked) {
+                    formaPagamento = 'Crédito';
+                } else if (document.getElementById('pix').checked) {
+                    formaPagamento = 'Pix';
+                } else {
+                    formaPagamento = 'Não selecionado';
+                }
+
+                // Adiciona a forma de pagamento ao texto
+                texto += `\n\n*Forma de pagamento: ${formaPagamento}*`;
+
+                // Converte a URL
+                let encode = encodeURI(texto);
+                let URL = `https://wa.me/${CELULAR_EMPRESA}?text=${encode}`;
+
+                // Atualiza o botão com o link do WhatsApp
+                $("#btnEtapaResumo").attr('href', URL);
+            }
+        });
+
+    } else {
+        console.log("Nenhum item no carrinho.");
+    }
+},
+
 
     
     // carrega o link do botão reserva
