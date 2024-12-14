@@ -82,22 +82,6 @@ var MENU = {
             "dsc": "",
             "price": 18.00
         },
-        {
-            "id": "07-BrócolisM",
-            "img": "assets/img/cardapio/pizzas/doog.jpeg",
-            "name": "Cachorro quente",
-            "title": "Pão baguete, Alface, tomate, milho, batata palha, salsicha, ketchup, maionese.",
-            "dsc": "",
-            "price": 16.00
-        },
-        {
-            "id": "12-FrangoCatupiryP",
-            "img": "assets/img/cardapio/pizzas/cachorrao.png",
-            "name": "cachorrão",
-            "title": "Pão baguete, Alface, tomate, bacon, milho, batata palha, 2 salsicha, ketchup, maionese.",
-            "dsc": "",
-            "price": 22.00
-        }
     ],
     /* "Pastel": [
         {
