@@ -339,7 +339,7 @@ var MENU = {
     "bebidas": [
         {
             "id": "refrigerante-lata",
-            "img": "assets/img/cardapio/coca.png",
+            "img": "assets/img/cardapio/cocacola.png",
             "name": "Coca cola",
             "title": "Refrigerante em Lata 350ml.",
             "dsc": "",
@@ -347,7 +347,7 @@ var MENU = {
         },
         {
             "id": "suco-del-valle",
-            "img": "assets/img/cardapio/zero.png",
+            "img": "assets/img/cardapio/zero1.png",
             "name": "Coca zero",
             "title": "Refrigerante em Lata 350ml",
             "dsc": "",
@@ -364,7 +364,7 @@ var MENU = {
 
         {
             "id": "coca-cola-2l",
-            "img": "assets/img/cardapio/sprit.png",
+            "img": "assets/img/cardapio/sprite.png",
             "name": "Sprite",
             "title": "Refrigerante em Lata 350ml",
             "dsc": "",
@@ -397,7 +397,7 @@ var MENU = {
         
         {
             "id": "cerveja-original-600ml",
-            "img": "assets/img/cardapio/Anta.png",
+            "img": "assets/img/cardapio/Anta.jpg",
             "name": "Antártica",
             "title": "Cerveja lata 350ml",
             "dsc": "",
