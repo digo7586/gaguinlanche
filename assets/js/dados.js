@@ -339,27 +339,44 @@ var MENU = {
     "bebidas": [
         {
             "id": "refrigerante-lata",
-            "img": "assets/img/cardapio/refri.png",
-            "name": "Refrigerante Lata 350ml",
-            "title": "Refrigerante em Lata. Consulte sabores.",
+            "img": "assets/img/cardapio/coca.png",
+            "name": "Coca cola",
+            "title": "Refrigerante em Lata 350ml.",
             "dsc": "",
             "price": 6.00
         },
+        {
+            "id": "suco-del-valle",
+            "img": "assets/img/cardapio/zero.png",
+            "name": "Coca zero",
+            "title": "Refrigerante em Lata 350ml",
+            "dsc": "",
+            "price": 6.00
+        }, 
+{
+            "id": "cervejas-long-neck",
+            "img": "assets/img/cardapio/fanta.png",
+            "name": "Fanta",
+            "title": "Refrigerante em Lata 350ml",
+            "dsc": "",
+            "price": 6.00
+        },
+
         {
             "id": "coca-cola-2l",
-            "img": "assets/img/cardapio/sucoNat.jpg",
-            "name": "Suco natural 300ml",
-            "title": "Sucos naturais. consulte sabores",
+            "img": "assets/img/cardapio/sprit.png",
+            "name": "Sprite",
+            "title": "Refrigerante em Lata 350ml",
             "dsc": "",
             "price": 6.00
         },
         {
-            "id": "agua-com-gas",
-            "img": "assets/img/cardapio/cerva3.jpg",
-            "name": "Cerveja lata 350ml",
-            "title": "Água Mineral com Gás",
+            "id": "cerveja-skol-600ml",
+            "img": "assets/img/cardapio/sucolaranja.png",
+            "name": "Suco de laranja",
+            "title": "Suco natural 300ml",
             "dsc": "",
-            "price": 7.00
+            "price": 6.00
         },
         {
             "id": "agua-sem-gas",
@@ -370,6 +387,25 @@ var MENU = {
             "price": 4.00
         },
         {
+            "id": "agua-com-gas",
+            "img": "assets/img/cardapio/Skol.jpeg",
+            "name": "Skol",
+            "title": "Cerveja lata 350ml",
+            "dsc": "",
+            "price": 7.00
+        },
+        
+        {
+            "id": "cerveja-original-600ml",
+            "img": "assets/img/cardapio/Anta.png",
+            "name": "Antártica",
+            "title": "Cerveja lata 350ml",
+            "dsc": "",
+            "price": 7.00
+        },
+        
+        
+        {
             "id": "xereta-2l",
             "img": "assets/img/cardapio/choop.jpg",
            "name": "Chopp",
@@ -377,41 +413,7 @@ var MENU = {
             "dsc": "",
             "price": 10.00
         }, 
-        
-       
         /*
-        {
-            "id": "suco-del-valle",
-            "img": "assets/img/cardapio/suco.png",
-            "name": "Suco Del Valle",
-            "title": "Suco Del Valle com diversos sabores.",
-            "dsc": "",
-            "price": 6.00
-        }, 
-        {
-            "id": "cervejas-long-neck",
-            "img": "assets/img/cardapio/longNeck.png",
-            "name": "Cervejas Long Neck",
-            "title": "Budweiser, Heineken e Corona",
-            "dsc": "",
-            "price": 9.00
-        },
-        {
-            "id": "cerveja-skol-600ml",
-            "img": "assets/img/cardapio/skol.png",
-            "name": "Skol/Antarctica 600ml",
-            "title": "Cerveja Skol ou Antarctica 600ml",
-            "dsc": "",
-            "price": 12.00
-        },
-        {
-            "id": "cerveja-original-600ml",
-            "img": "assets/img/cardapio/original.png",
-            "name": "Original/Heineken 600ml",
-            "title": "Cerveja Original ou Heineken 600ml",
-            "dsc": "",
-            "price": 15.00
-        },
         {
             "id": "taca-de-vinho",
             "img": "assets/img/cardapio/wine.png",
