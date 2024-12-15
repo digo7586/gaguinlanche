@@ -657,7 +657,7 @@ hr {
 #nomeCliente {
     background-color: #f4f7fb; /* Cor de fundo clara (alice blue) */
     color: #333; /* Cor do texto */
-    border: 1px solid #ccc; /* Borda suave e discreta */
+    border: 1px solid #7a7a7a; /* Borda suave e discreta */
     padding: 8px; /* Espaçamento interno */
     border-radius: 4px; /* Borda arredondada */
     font-size: 14px; /* Tamanho da fonte */
