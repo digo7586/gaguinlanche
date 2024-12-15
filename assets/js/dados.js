@@ -398,7 +398,7 @@ var MENU = {
         {
             "id": "cerveja-original-600ml",
             "img": "assets/img/cardapio/Anta.jpg",
-            "name": "Antártica",
+            "name": "Antarctica",
             "title": "Cerveja lata 350ml",
             "dsc": "",
             "price": 7.00
