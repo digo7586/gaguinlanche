@@ -343,7 +343,7 @@ var MENU = {
             "name": "Coca cola",
             "title": "Refrigerante em Lata 350ml.",
             "dsc": "",
-            "price": 6.00
+            "price": 5.00
         },
         {
             "id": "suco-del-valle",
@@ -351,7 +351,7 @@ var MENU = {
             "name": "Coca zero",
             "title": "Refrigerante em Lata 350ml",
             "dsc": "",
-            "price": 6.00
+            "price": 5.00
         }, 
 {
             "id": "cervejas-long-neck",
@@ -359,7 +359,7 @@ var MENU = {
             "name": "Fanta",
             "title": "Refrigerante em Lata 350ml",
             "dsc": "",
-            "price": 6.00
+            "price": 5.00
         },
 
         {
@@ -368,7 +368,7 @@ var MENU = {
             "name": "Sprite",
             "title": "Refrigerante em Lata 350ml",
             "dsc": "",
-            "price": 6.00
+            "price": 5.00
         },
         {
             "id": "cerveja-skol-600ml",
@@ -392,7 +392,7 @@ var MENU = {
             "name": "Skol",
             "title": "Cerveja lata 350ml",
             "dsc": "",
-            "price": 7.00
+            "price": 5.50
         },
         
         {
@@ -401,7 +401,7 @@ var MENU = {
             "name": "Antarctica",
             "title": "Cerveja lata 350ml",
             "dsc": "",
-            "price": 7.00
+            "price": 5.50
         },
         
         
