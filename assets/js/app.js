@@ -218,7 +218,7 @@ cardapio.metodos = {
         }
     
         if (etapa == 2) {
-            $("#lblTituloEtapa").text('Entrega / Retirada:');
+            $("#lblTituloEtapa").text('Observação:');
             $("#itensCarrinho").addClass('hidden');
             $("#entregaRetirada").removeClass('hidden');
             $("#localEntrega").removeClass('hidden');
