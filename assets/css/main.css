@@ -653,22 +653,7 @@ hr {
     }
 }
 
-/* Aplica a cor ao fundo e ao foco do input */
-#nomeCliente {
-    background-color: #eeeff1; /* Cor de fundo clara (alice blue) */
-    color: #333; /* Cor do texto */
-    border: 2px solid #b6b8c3; /* Borda suave e discreta */
-    padding: 8px; /* Espaçamento interno */
-    border-radius: 4px; /* Borda arredondada */
-    font-size: 14px; /* Tamanho da fonte */
-}
 
-/* Alterações na cor do fundo quando o input está em foco */
-#nomeCliente:focus {
-    background-color: #53545c; /* Fundo mais claro quando em foco */
-    border-color: #0097a7; /* Cor da borda em foco */
-    outline: none; /* Remove o contorno padrão do navegador */
-}
 
 /* Cor da borda quando o input está preenchido */
 #nomeCliente:valid {
