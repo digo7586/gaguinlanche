@@ -67,14 +67,6 @@ var MENU = {
             "price": 23.00
         },
         {
-            "id": "10-ContraFileM",
-            "img": "assets/img/cardapio/pizzas/0.png",
-            "name": "Lanche Coração",
-            "title": "Pão baguete, Alface, tomate, cebola, coração, ketchup, maionese.",
-            "dsc": "",
-            "price": 30.00
-        },
-        {
             "id": "11-CrocanteM",
             "img": "assets/img/cardapio/pizzas/duplo.PNG",
             "name": "Hambúrguer Duplo",
@@ -82,6 +74,15 @@ var MENU = {
             "dsc": "",
             "price": 18.00
         },
+        {
+            "id": "10-ContraFileM",
+            "img": "assets/img/cardapio/pizzas/0.png",
+            "name": "Lanche Coração",
+            "title": "Pão baguete, Alface, tomate, cebola, coração, ketchup, maionese.",
+            "dsc": "",
+            "price": 30.00
+        },
+        
          {
             "id": "12-CrocanteM",
             "img": "assets/img/cardapio/pizzas/cachorraoind.png",
