@@ -82,6 +82,22 @@ var MENU = {
             "dsc": "",
             "price": 18.00
         },
+         {
+            "id": "12-CrocanteM",
+            "img": "assets/img/cardapio/pizzas/duplo.PNG",
+            "name": "Cachorrão",
+            "title": "Alface, tomate, bacon, milho, batata palha, 2 salsicha,ketchup, maionese.",
+            "dsc": "",
+            "price": 22.00
+        },
+         {
+            "id": "13-CrocanteM",
+            "img": "assets/img/cardapio/pizzas/duplo.PNG",
+            "name": "Cachorro quente",
+            "title": "Alface, tomate, milho, batata palha, salsicha,ketchup, maionese.",
+            "dsc": "",
+            "price": 16.00
+        },
     ],
     /* "Pastel": [
         {
