@@ -10,7 +10,7 @@ var MEU_ENDERECO = null;
     const ENDERECO_PIZZARIA = {
         endereco: 'Av Eugênia Fazanario Pedroso',
         numero: '287',
-        bairro: 'Campo verde',
+        bairro: 'Campo verder',
         cidade: 'Iracemápolis',
         uf: 'SP',
         cep: '13498-102',
@@ -204,7 +204,7 @@ cardapio.metodos = {
         if (etapa == 1) {
             $("#lblTituloEtapa").text('Seu carrinho:');
             $("#itensCarrinho").removeClass('hidden');
-            $("#entregaRetirada").removeClass('hidden');
+            $("#entregaRetirada").addClass('hidden');
             $("#localEntrega").addClass('hidden');
             $("#resumoCarrinho").addClass('hidden');
     
@@ -372,7 +372,7 @@ cardapio.metodos = {
         VALOR_CARRINHO = 0;
 
         $("#lblSubTotal").text('R$ 0,00');
-        $("#lblValorEntrega").text('+ R$ 5,00');
+        $("#lblValorEntrega").text('+ R$ 0,00');
         $("#lblValorTotal").text('R$ 0,00');
 
         $.each(MEU_CARRINHO, (i, e) => {
@@ -637,7 +637,7 @@ carregarResumo: () => {
         $('#nomeCli').text(nomeRetirada);
 
         // Atualiza o título para 'Endereço de retirada'
-        $(".retiradas").html('<b>Endereço:</b>');
+        $("#localEntregaOuRetirada").html('<b>Endereço retirada:</b>');
 
         // Exibe o endereço da pizzaria
         $("#resumoEndereco").html('Av Eugênia Fazanario Pedroso, n°287, Iracemápolis');
@@ -668,7 +668,7 @@ carregarResumo: () => {
         $("#lblValorTotal").text(`R$ ${(VALOR_CARRINHO + VALOR_ENTREGA).toFixed(2).replace('.', ',')}`);
 
         // Atualiza o título para 'Local da Entrega'
-        $(".retiradas").html('<b>Local:</b>');
+        $("#localEntregaOuRetirada").html('<b>Local da entrega:</b>');
 
         // Mostra a seção de endereço do cliente
         $("#resumoEndereco").show();
