@@ -218,7 +218,7 @@ cardapio.metodos = {
         }
     
         if (etapa == 2) {
-            $("#lblTituloEtapa").text('Observação:');
+            $("#lblTituloEtapa").text('Observação / Pagamento:');
             $("#itensCarrinho").addClass('hidden');
             $("#entregaRetirada").removeClass('hidden');
             $("#localEntrega").removeClass('hidden');
@@ -308,6 +308,9 @@ cardapio.metodos = {
                 }
 
             })
+
+            let observacao = document.getElementById('obs').value;
+            $('#obser').text(observacao);
 
         }
         else {
