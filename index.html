@@ -443,6 +443,12 @@
                     <!-- Campo de entrada para o nome -->
                     <div id="nomeRetirada" class="col-12 animated fadeIn">
                         <div class="form-group">
+                            <label for="obs">Observação:</label>
+                            <input type="text" id="obs" name="obs" class="form-control" placeholder="Digite aqui" required>
+                        </div>
+                    </div>
+                    <div id="nomeRetirada" class="col-12 animated fadeIn">
+                        <div class="form-group">
                             <label for="nomeCliente">Nome:</label>
                             <input type="text" id="nomeCliente" name="nomeCliente" class="form-control" placeholder="Digite seu nome" required>
                         </div>
@@ -579,6 +585,11 @@
                         </div>
                     </div>
 
+                    <div class="col-12">
+                        <p id="obs" class="title-carrinho mt-4 cliente">
+                            <b>Observação:</b> <span id="obser"></span>
+                        </p>
+                    </div>
                     <div class="col-12">
                         <p id="NomeCLiente" class="title-carrinho mt-4 cliente">
                             <b>Nome do Cliente:</b> <span id="nomeCli"></span>
