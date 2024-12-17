@@ -605,8 +605,9 @@ cardapio.metodos = {
   // Carrega a etapa de Resumo do pedido
 carregarResumo: () => {
     let nomeRetirada = document.getElementById('nomeCliente').value;
+    let observacao = document.getElementById('obs').value;
 
-    $("#listaItensResumo").html('');
+    $("#listaItensResumo").html(''); // Limpa os itens do resumo
 
     // Exibe os itens do carrinho
     $.each(MEU_CARRINHO, (i, e) => {
@@ -631,9 +632,10 @@ carregarResumo: () => {
 
     // Verifica se a opção 'Retirada' está selecionada
     if (document.getElementById('retirada').checked) {
-        enderecoFields.forEach(field => field.value = '');
+        enderecoFields.forEach(field => field.value = ''); // Limpa os campos de endereço
 
-        // Exibe o nome do cliente
+        // Exibe o nome do cliente e a observação
+        $('#obser').text(observacao);
         $('#nomeCli').text(nomeRetirada);
 
         // Atualiza o título para 'Endereço de retirada'
@@ -658,6 +660,7 @@ carregarResumo: () => {
 
     } else {
         // Exibe o nome do cliente
+        $('#obser').text(observacao);
         $('#nomeCli').text(nomeRetirada);
 
         // Exibe o endereço fornecido pelo cliente
@@ -700,6 +703,7 @@ carregarResumo: () => {
    // Atualiza o link do botão do WhatsApp
 finalizarPedido: () => {
     let nomeRetirada = document.getElementById('nomeCliente').value.trim(); // Remove espaços em branco
+    let observacao = document.getElementById('obs').value.trim(); // Remove espaços em branco
 
     if (MEU_CARRINHO.length > 0) {
 
@@ -709,12 +713,18 @@ finalizarPedido: () => {
 
         var itens = '';
 
+
         $.each(MEU_CARRINHO, (i, e) => {
             itens += `*${e.qntd}x* ${e.name} ${e.dsc} .. R$ ${e.price.toFixed(2).replace('.', ',')} \n`;
 
             // Último item
             if ((i + 1) == MEU_CARRINHO.length) {
                 texto += itens; // Adiciona os itens ao texto
+
+                 // Adiciona a observação
+                if (observacao) {
+                    texto += `\n\n*Observação:* ${observacao}`;
+                }
 
                 // Verifica se é retirada ou entrega
                 if (document.getElementById('retirada').checked) {
