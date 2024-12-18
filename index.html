@@ -34,6 +34,8 @@
                 <a class="navbar-brand wow fadeIn" href="#">
                     <img src="./assets/img/bkground/logo.png" width="90" class="img-logo" alt="logo da empresa" />
                 </a>
+                
+                <div class="circulo TextGreen"></div><span class="TextGreen">Loja Aberta</span>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
                     <span class="navbar-toggler-icon">
                         <i class="fas fa-bars"></i>
@@ -76,15 +78,15 @@
                             <br>
                             Venha conhecer nosso Cardápio!
                         </p>
-                         <p class="wow fadeInLeft delay-02s">
-                            Horário de Atendimento:
+                        <p class="wow fadeInLeft delay-02s">
+                            Horário de Atendimento
                             <br>
                             📅 Quinta-feira a Terça-feira
                             <br>
                             🕒 19:00 às 23:00
                         </p>
                         <p class="wow fadeInLeft delay-02s">
-                            Endereço:
+                            Endereço
                             <br>
                             📌Av Eugênia Fazanario Pedroso, 287
                             <br>
@@ -306,8 +308,8 @@
                             <p class="texto-depoimento">
                                 <i class="fas fa-quote-left"></i>
                                 <span>
-                                    Lanches, experiência, serviço...
-                                    tudo muito bom.
+                                    Lanches, sobremesa, experiência, serviço...
+                                    foi tão bom que fomos dois dias seguidos.
                                 </span>
                                 <i class="fas fa-quote-right"></i>
                             </p>
@@ -453,7 +455,7 @@
                     <!-- Campo de entrada para o nome -->
                     <div id="nomeRetirada" class="col-12 animated fadeIn">
                         <div class="form-group">
-                            <label for="nomeCliente">Nome:</label>
+                            <label for="nomeCliente"><b>Nome:</b></label>
                             <input type="text" id="nomeCliente" name="nomeCliente" class="form-control" placeholder="Digite seu nome" required>
                         </div>
                     </div>
@@ -478,6 +480,15 @@
                             <label>
                                 <input type="radio" name="opcaoPay" value="pix" id="pix">Pix
                             </label>
+                            <label>
+                                <input type="radio" name="opcaoCash" value="dinheiro" id="dinheiro">Dinheiro
+                            </label>                            
+                        </div>
+                        <div id="trocoContainer" class="opcao-pagamento" style="display: inline;">
+                            <div class="form-group">
+                                <label for="troco"><b>Troco para:</b> </label>
+                                <input type="number" id="troco" name="troco" class="form-control" placeholder="Insira o valor para troco" min="0" step="0.01">
+                            </div>
                         </div>
                         <hr>
                     </div>
@@ -682,6 +693,7 @@
     <script type="text/javascript" src="./assets/js/modernizr-3.5.0.min.js"></script>
     <script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="./assets/js/popper.min.js"></script>
+    <script type="text/javascript" src="./assets/js/horarios.js"></script>
     <script type="text/javascript" src="./assets/js/wow.min.js"></script>
     <script type="text/javascript" src="./assets/js/dados.js"></script>
     <script type="text/javascript" src="./assets/js/app.js"></script>
