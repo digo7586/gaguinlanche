@@ -490,8 +490,11 @@ footer {
 
 .img-logo {
     width: 70px;
-    border-radius: 50%;
+    border: 5px solid transparent; /* Borda inicial transparente */
+    border-radius: 50%; /* Deixa a borda em forma de círculo */
+    transition: border-color 0.3s ease; /* Anima a transição da cor da borda */
 }
+
 
 .logo-footer  {
     width: 60px;
