@@ -10,7 +10,7 @@ var MEU_ENDERECO = null;
     const ENDERECO_PIZZARIA = {
         endereco: 'Av Eugênia Fazanario Pedroso',
         numero: '287',
-        bairro: 'Campo verder',
+        bairro: 'Campo verde',
         cidade: 'Iracemápolis',
         uf: 'SP',
         cep: '13498-102',
