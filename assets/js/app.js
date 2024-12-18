@@ -32,6 +32,24 @@ cardapio.eventos = {
 
 }
 
+// Funções de LocalStorage
+function salvarCarrinhoLocalStorage() {
+    localStorage.setItem('carrinho', JSON.stringify(MEU_CARRINHO));
+}
+
+function carregarCarrinhoLocalStorage() {
+    const carrinho = localStorage.getItem('carrinho');
+    if (carrinho) MEU_CARRINHO = JSON.parse(carrinho);
+}
+
+// Quando a página carregar, restaura o carrinho e atualiza o ícone de quantidade
+window.onload = () => {
+    carregarCarrinhoLocalStorage();
+    cardapio.metodos.atualizarBadgeTotal();
+}
+
+
+
 cardapio.metodos = {
 
     // obtem a lista de itens do cardápio
@@ -176,12 +194,17 @@ cardapio.metodos = {
                 $("#qntd-" + id).text(0);
 
                 cardapio.metodos.atualizarBadgeTotal();
+                 // Salva o carrinho no LocalStorage toda vez que for atualizado
+            salvarCarrinhoLocalStorage();
 
             }
 
         }
 
+
     },
+
+    
 
     // atualiza o badge de totais dos botões "Meu carrinho"
     atualizarBadgeTotal: () => {
