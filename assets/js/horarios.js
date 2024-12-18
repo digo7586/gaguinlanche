@@ -5,7 +5,7 @@ function verificarStatusLoja() {
     const horaAtual = dataAtual.getHours(); // Horário atual
 
     // Verifica se o dia e horário estão dentro do funcionamento da loja (quinta a terça das 19h às 23h)
-    const lojaAberta = diaSemana !== 3; // Se não for quarta, a loja está aberta
+    const lojaAberta = diaSemana !== 6; // Se não for quarta, a loja está aberta
 
     const dentroHorario = horaAtual >= 19 && horaAtual <= 23; // Das 19h às 23h
 
