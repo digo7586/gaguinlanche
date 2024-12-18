@@ -486,6 +486,7 @@ cardapio.metodos = {
         const radioDebito = document.getElementById('debito');
         const radioCredito = document.getElementById('credito');
         const radioPix = document.getElementById('pix');
+        const radioDinheiro = document.getElementById('dinheiro');
         
         // Função para desabilitar ou habilitar campos com base na opção selecionada
         function toggleEnderecoFields() {
@@ -588,6 +589,8 @@ cardapio.metodos = {
             formaPagamento = 'Crédito';
         } else if (radioPix.checked) {
             formaPagamento = 'Pix';
+        } else if (radioDinheiro.checked) {
+            formaPagamento = 'Dinheiro';
         } else {
             cardapio.metodos.mensagem('Escolha uma forma de pagamento.');
             return;
@@ -595,6 +598,18 @@ cardapio.metodos = {
     
         // Exibe o resumo com forma de pagamento
         $("#formaPagamentoResumo").text(`Forma de pagamento: ${formaPagamento}`);
+
+         // Adiciona o listener para alterar a visibilidade do campo de troco
+    document.querySelectorAll('input[name="formaPagamento"]').forEach(radio => {
+        radio.addEventListener('change', function() {
+            // Se a opção 'Dinheiro' for selecionada, mostra o campo de troco
+            if (document.getElementById('dinheiro').checked) {
+                document.getElementById('trocoContainer').classList.remove('hidden');
+            } else {
+                document.getElementById('trocoContainer').classList.add('hidden');
+            }
+        });
+    });
     
         // Atualiza o resumo com os dados do endereço
         let resumoEndereco = `${MEU_ENDERECO.endereco}, ${MEU_ENDERECO.numero} - ${MEU_ENDERECO.bairro} - ${MEU_ENDERECO.cidade} - ${MEU_ENDERECO.uf}`;
@@ -689,6 +704,8 @@ carregarResumo: () => {
         formaPagamento = 'Crédito';
     } else if (document.getElementById('pix').checked) {
         formaPagamento = 'Pix';
+    } else if (document.getElementById('dinheiro').checked) {
+        formaPagamento = 'Dinheiro';
     } else {
         formaPagamento = 'Não selecionado';
     }
@@ -707,6 +724,10 @@ carregarResumo: () => {
 finalizarPedido: () => {
     let nomeRetirada = document.getElementById('nomeCliente').value.trim(); // Remove espaços em branco
     let observacao = document.getElementById('obs').value.trim(); // Remove espaços em branco
+
+    // Obtém o valor do troco (caso tenha sido inserido)
+    let valorTroco = document.getElementById('troco').value.trim();
+    valorTroco = valorTroco ? parseFloat(valorTroco) : 0;
 
     if (MEU_CARRINHO.length > 0) {
 
@@ -754,12 +775,21 @@ finalizarPedido: () => {
                     formaPagamento = 'Crédito';
                 } else if (document.getElementById('pix').checked) {
                     formaPagamento = 'Pix';
-                } else {
+                } else if (document.getElementById('dinheiro').checked) {
+                    formaPagamento = 'Dinheiro';
+                }else {
                     formaPagamento = 'Não selecionado';
                 }
 
                 // Adiciona a forma de pagamento ao texto
                 texto += `\n\n*Forma de pagamento: ${formaPagamento}*`;
+
+                 // Se o pagamento for em dinheiro e o troco for informado, adiciona ao texto
+                 if (formaPagamento === 'Dinheiro' && valorTroco > 0) {
+                    texto += `\n*Troco para: R$ ${valorTroco.toFixed(2).replace('.', ',')}*`;
+                }
+
+                texto += '\n\n Obrigado(a)';
 
                 // Converte a URL
                 let encode = encodeURI(texto);
