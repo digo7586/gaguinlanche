@@ -665,6 +665,31 @@ hr {
     border-color: #f44336; /* Vermelho para indicar erro */
 }
 
+#trocoContainer.hidden {
+    display: none;
+}
+
+#trocoContainer {
+    margin-top: 10px;
+}
+
+span.TextGreen {
+    color: #4CAF50; /* Verde para o texto (inicialmente Loja Aberta) */
+}
+
+.circulo {
+    background: #4CAF50; /* Verde para o círculo (inicialmente Loja Aberta) */
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    margin-right: 5px; /* Um pequeno espaçamento à direita do círculo */
+}
+
+
+
+
+
 
 
 .modal-full .item-carrinho {
