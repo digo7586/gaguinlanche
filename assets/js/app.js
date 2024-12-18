@@ -121,8 +121,27 @@ cardapio.metodos = {
 
     },
 
+    // Função para verificar se a loja está aberta
+    verificarStatusLoja() {
+        const dataAtual = new Date();
+        const diaSemana = dataAtual.getDay(); // 0 - domingo, 1 - segunda, ..., 6 - sábado
+        const horaAtual = dataAtual.getHours(); // Horário atual
+
+        // Verifica se o dia e horário estão dentro do funcionamento da loja (quinta a terça das 19h às 23h)
+        const lojaAberta = (diaSemana >= 4 && diaSemana <= 6) || (diaSemana >= 1 && diaSemana <= 2); // Quinta a Terça
+        const dentroHorario = horaAtual >= 19 && horaAtual <= 23; // Das 19h às 23h
+
+        return lojaAberta && dentroHorario; // Loja está aberta se ambos forem verdadeiros
+},
+
     // adicionar ao carrinho o item do cardápio
     adicionarAoCarrinho: (id) => {
+
+        // Verifica se a loja está aberta
+    if (!verificarStatusLoja()) {
+        cardapio.metodos.mensagem('A loja está fechada. Não é possível adicionar itens ao carrinho.', 'red');
+        return; // Interrompe a execução da função
+    }
 
         let qntdAtual = parseInt($("#qntd-" + id).text());
 
