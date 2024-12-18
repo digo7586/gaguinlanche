@@ -5,7 +5,8 @@ function verificarStatusLoja() {
     const horaAtual = dataAtual.getHours(); // Horário atual
 
     // Verifica se o dia e horário estão dentro do funcionamento da loja (quinta a terça das 19h às 23h)
-    const lojaAberta = (diaSemana >= 4 && diaSemana <= 6) || (diaSemana >= 1 && diaSemana <= 2); // Quinta a Terça
+    const lojaAberta = diaSemana !== 3; // Se não for quarta, a loja está aberta
+
     const dentroHorario = horaAtual >= 19 && horaAtual <= 23; // Das 19h às 23h
 
     const statusLoja = lojaAberta && dentroHorario; // Loja está aberta se ambos forem verdadeiros
@@ -28,6 +29,7 @@ function verificarStatusLoja() {
         circuloStatusFoto.style.backgroundColor = '#F44336'; // Vermelho
         textoStatus.style.color = '#F44336'; // Vermelho
     }
+    return statusLoja;
 }
 
 // Chama a função assim que a página carrega
