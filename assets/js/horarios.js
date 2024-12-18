@@ -13,16 +13,19 @@ function verificarStatusLoja() {
     // Seleciona o elemento de texto e o círculo
     const textoStatus = document.querySelector('span.TextGreen');
     const circuloStatus = document.querySelector('.circulo');
+    const circuloStatusFoto = document.querySelector('.img-logo');
 
     if (statusLoja) {
         // Se estiver aberta
         textoStatus.textContent = 'Loja Aberta';
         circuloStatus.style.backgroundColor = '#4CAF50'; // Verde natural
+        circuloStatusFoto.style.backgroundColor = '#4CAF50'; // Verde natural
         textoStatus.style.color = '#4CAF50'; // Verde natural
     } else {
         // Se estiver fechada
         textoStatus.textContent = 'Loja Fechada';
         circuloStatus.style.backgroundColor = '#F44336'; // Vermelho
+        circuloStatusFoto.style.backgroundColor = '#F44336'; // Vermelho
         textoStatus.style.color = '#F44336'; // Vermelho
     }
 }
