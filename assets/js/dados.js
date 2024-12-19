@@ -85,7 +85,7 @@ var MENU = {
         
          {
             "id": "12-CrocanteM",
-            "img": "assets/img/cardapio/pizzas/cachorraoind.png",
+            "img": "assets/img/cardapio/pizzas/cachorrao.png",
             "name": "Cachorrão",
             "title": "Alface, tomate, bacon, milho, batata palha, 2 salsicha,ketchup, maionese.",
             "dsc": "",
@@ -93,7 +93,7 @@ var MENU = {
         },
          {
             "id": "13-CrocanteM",
-            "img": "assets/img/cardapio/pizzas/doogind.png",
+            "img": "assets/img/cardapio/pizzas/doog.jpeg",
             "name": "Cachorro quente",
             "title": "Alface, tomate, milho, batata palha, salsicha,ketchup, maionese.",
             "dsc": "",
