@@ -9,6 +9,14 @@ var MENU = {
             "price": 20.00
         },
         {
+            "id": "06-Cupim",
+            "img": "assets/img/cardapio/pizzas/cupim.jpg",
+            "name": "Lanche cupim",
+            "title": "Pão baguete, cupim, queijo, cebola, bacon, patê de alho, queijo prato, rúcula , tomate, ketchup, maionese.",
+            "dsc": "",
+            "price": 35.00
+        },
+        {
             "id": "09-CalabresaEspecialM",
             "img": "assets/img/cardapio/pizzas/pernil.png",
             "name": "Lanche Pernil",
