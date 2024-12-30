@@ -108,56 +108,56 @@ var MENU = {
             "price": 16.00
         },
     ],
-    /* "Pastel": [
+     "Pastel": [
         {
             "id": "38-banana-nevada",
-            "img": "assets/img/cardapio/pizzas/bananaNevada.png",
-            "name": "Banana Nevada",
-            "title": "Banana, chocolate branco, canela e açúcar.",
-             "dsc": "P 4 pdç",
-            "price":  37.00,
+            "img": "assets/img/cardapio/pizzas/b5.png",
+            "name": "Fritas - Meia",
+            "title": "Batata frita. MEIA",
+             "dsc": "Meia",
+            "price":  22.00,
                
             
         },
         {
             "id": "39-brigadeiro",
-            "img": "assets/img/cardapio/pizzas/brigadeiro.png",
-            "name": "Brigadeiro",
-            "title": "Chocolate com granulado.",
-            "dsc": "P 4 pdç",
+            "img": "assets/img/cardapio/pizzas/b5.png",
+            "name": "Fritas - Inteira",
+            "title": "Batata frita. INTEIRA",
+            "dsc": "Inteira",
             "price": 
-                 37.00,
+                 32.00,
                 
         },
         {
             "id": "40-chocobana",
-            "img": "assets/img/cardapio/pizzas/chocobana.png",
-            "name": "Chocobana",
-            "title": "Leite condensado, mussarela, banana e chocolate.",
-             "dsc": "P 4 pdç",
+            "img": "assets/img/cardapio/pizzas/b6.png",
+            "name": "Fritas C/ Cheddar e bacon - Meia",
+            "title": "Batata frita com pedaços de bacon e queijo cheddar",
+             "dsc": "Meia",
             "price": 
-                 37.00,
-                
-        },
-        {
-            "id": "41-confete",
-            "img": "assets/img/cardapio/pizzas/confete.png",
-            "name": "Confete",
-            "title": "Chocolate com confete.",
-             "dsc": "P 4 pdç",
-            "price": 39.00,
+                 38.00,
                 
         },
         {
             "id": "42-dois-amores",
-            "img": "assets/img/cardapio/pizzas/doisAmores.png",
-            "name": "Dois Amores",
-            "title": "Chocolate branco e chocolate preto.",
-             "dsc": "P 4 pdç",
-            "price":37.00,
+            "img": "assets/img/cardapio/pizzas/b6.png",
+           "name": "Fritas C/ Cheddar e bacon - Inteira",
+            "title": "Batata frita com pedaços de bacon e queijo cheddar",
+             "dsc": "Inteira",
+            "price":46.00,
                 
             
         },
+        {
+            "id": "41-confete",
+            "img": "assets/img/cardapio/pizzas/c.png",
+            "name": "Calabresa defumada acebolada",
+            "title": "Calabresa com cebola. tamanho único",
+             "dsc": "",
+            "price": 25.00,
+                
+        }]/*
         {
             "id": "43-napolitana",
             "img": "assets/img/cardapio/pizzas/pizzaDoce.webp",
@@ -334,7 +334,8 @@ var MENU = {
             "price": 54.00,
                
         }
-    ],
+    ],*/
+    /*
     "sobremesas": [
         {
             "id": "sorvete-taca",
@@ -360,7 +361,7 @@ var MENU = {
             "dsc": "",
             "price": 15.00
         }
-    ], */
+    ], */,
     "bebidas": [
         {
             "id": "refrigerante-lata",
@@ -378,7 +379,7 @@ var MENU = {
             "dsc": "",
             "price": 5.00
         }, 
-{
+        {
             "id": "cervejas-long-neck",
             "img": "assets/img/cardapio/fanta.png",
             "name": "Fanta",
