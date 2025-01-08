@@ -6,7 +6,7 @@ function verificarStatusLoja() {
 
     let lojaAberta = false;
 
-    // Verifica as regras de funcionamento
+    // Regras de funcionamento
     if (diaSemana >= 4 && diaSemana <= 2) { // Quinta a terça
         if (
             (horaAtual === 10 || (horaAtual > 10 && horaAtual < 14) || (horaAtual === 14 && minutosAtuais <= 30)) || 
@@ -15,7 +15,11 @@ function verificarStatusLoja() {
             lojaAberta = true;
         }
     } else if (diaSemana === 3) { // Quarta-feira
-        if (horaAtual === 10 || (horaAtual > 10 && horaAtual < 14) || (horaAtual === 14 && minutosAtuais <= 30)) {
+        if (
+            horaAtual === 10 || 
+            (horaAtual > 10 && horaAtual < 14) || 
+            (horaAtual === 14 && minutosAtuais <= 30)
+        ) {
             lojaAberta = true;
         }
     }
