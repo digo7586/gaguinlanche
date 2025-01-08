@@ -124,13 +124,13 @@ cardapio.metodos = {
     // adicionar ao carrinho o item do cardápio
     adicionarAoCarrinho: (id) => {
 
-        /* Verifica se a loja está aberta
+        // Verifica se a loja está aberta
     if (!verificarStatusLoja()) {
        cardapio.metodos.mensagem('A loja está fechada. Não é possível adicionar itens ao carrinho.', 'red');
         return; 
-Interrompe a execução da função
+// Interrompe a execução da função
     }
-*/
+
         let qntdAtual = parseInt($("#qntd-" + id).text());
 
         if (qntdAtual > 0) {
