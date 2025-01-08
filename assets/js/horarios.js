@@ -6,16 +6,17 @@ function verificarStatusLoja() {
 
     let lojaAberta = false;
 
-    // Regras gerais de funcionamento
-    if (horaAtual >= 10 && (horaAtual < 14 || (horaAtual === 14 && minutosAtuais === 0))) {
-        lojaAberta = true; // Manhã: 10h às 14h
-    } else if (horaAtual >= 19 && horaAtual < 23) {
-        lojaAberta = true; // Noite: 19h às 23h
-    }
-
-    // Exceção para quarta-feira (fechada à noite)
-    if (diaSemana === 3 && horaAtual >= 14) {
-        lojaAberta = false;
+    // Regras de funcionamento
+    if (
+        (horaAtual >= 10 && (horaAtual < 14 || (horaAtual === 14 && minutosAtuais === 0))) || // Manhã: 10h às 14h
+        (horaAtual >= 19 && horaAtual < 23) // Noite: 19h às 23h
+    ) {
+        // Exceção para quarta-feira à noite
+        if (diaSemana === 3 && horaAtual >= 19) {
+            lojaAberta = false;
+        } else {
+            lojaAberta = true;
+        }
     }
 
     // Seleciona os elementos para manipulação
