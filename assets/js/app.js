@@ -125,7 +125,7 @@ cardapio.metodos = {
     adicionarAoCarrinho: (id) => {
 
         // Verifica se a loja está aberta
-    if (!verificarStatusLoja()) {
+    if (verificarStatusLoja()) {
        cardapio.metodos.mensagem('A loja está fechada. Não é possível adicionar itens ao carrinho.', 'red');
         return; 
 // Interrompe a execução da função
