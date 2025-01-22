@@ -12,7 +12,7 @@ function verificarStatusLoja() {
         (horaAtual >= 19 && horaAtual < 23) // Noite: 19h às 23h
     ) {
         // Exceção para quarta-feira à noite
-        if (diaSemana === 3 && horaAtual >= 19) {
+        if (diaSemana === 2 && horaAtual >= 19) {
             lojaAberta = false;
         } else {
             lojaAberta = true;
