@@ -6,7 +6,7 @@ var MENU = {
             "name": "Hambúrguer gourmet",
             "title": "Pão de hambúrguer, 150g hambúrguer artesanal, bacon, queijo prato patê de alho, alface, tomate ketchup, maionese.",
             "dsc": "",
-            "price": 20.00
+            "price": 22.00
         },
         {
             "id": "06-Cupim",
@@ -14,7 +14,7 @@ var MENU = {
             "name": "Lanche cupim",
             "title": "Pão baguete, cupim, queijo, cebola, bacon, patê de alho, queijo prato, rúcula , tomate, ketchup, maionese.",
             "dsc": "",
-            "price": 35.00
+            "price": 36.00
         },
         {
             "id": "09-CalabresaEspecialM",
@@ -63,7 +63,7 @@ var MENU = {
             "name": "Hambúrguer simples",
             "title": "Pão de hambúrguer, hambúrguer tradicional, queijo mussarela, alface, tomate ketchup, maionese.",
             "dsc": "",
-            "price": 15.00
+            "price": 18.00
         },
         
         {
@@ -80,7 +80,7 @@ var MENU = {
             "name": "Hambúrguer Duplo",
             "title": "hambúrguer, alface, tomate, bacon, queijo.",
             "dsc": "",
-            "price": 18.00
+            "price": 20.00
         },
         {
             "id": "10-ContraFileM",
@@ -89,6 +89,39 @@ var MENU = {
             "title": "Pão baguete, Alface, tomate, cebola, coração, ketchup, maionese.",
             "dsc": "",
             "price": 30.00
+        },
+        {
+            "id": "20-ContraFileM",
+            "img": "assets/img/cardapio/pizzas/coracao.jpeg",
+            "name": "Fit peixe",
+            "title": "Filé de tilápia, rucúla, tomate, ketchup, maionese, queijo prato, cebola roxa.",
+            "dsc": "",
+            "price": 30.00
+        },
+
+        {
+            "id": "25-BauruM",
+            "img": "assets/img/cardapio/pizzas/gourmet.png",
+            "name": "Gourmet fit",
+            "title": "Pão de hambúrguer, 150g hambúrguer, ketchup, maionese,alface, tomate, ovo, queijo prato.",
+            "dsc": "",
+            "price": 28.00
+        },
+        {
+            "id": "26-BauruM",
+            "img": "assets/img/cardapio/pizzas/gourmet.png",
+            "name": "Gourmet triplo",
+            "title": "Pão de hambúrguer, 3 hambúrguer artesanal 150g, bacon, queijo prato,  patê de alho, alface, tomate, ketchup, maionese, anel de cebola.",
+            "dsc": "",
+            "price": 45.00
+        },
+        {
+            "id": "27-BauruM",
+            "img": "assets/img/cardapio/pizzas/gourmet.png",
+            "name": "Gourmet duplo",
+            "title": "Pão de hambúrguer,2 hambúrguer artesanal 150g, bacon, queijo prato, patê de alho, alface, tomate, ketchup, maionese, anel de cebola.",
+            "dsc": "",
+            "price": 35.00
         },
         
          {
