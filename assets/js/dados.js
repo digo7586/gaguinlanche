@@ -92,7 +92,7 @@ var MENU = {
         },
         {
             "id": "20-ContraFileM",
-            "img": "assets/img/cardapio/pizzas/coracao.jpeg",
+            "img": "assets/img/cardapio/pizzas/coracao.jg",
             "name": "Fit peixe",
             "title": "Filé de tilápia, rucúla, tomate, ketchup, maionese, queijo prato, cebola roxa.",
             "dsc": "",
