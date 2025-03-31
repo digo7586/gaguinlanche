@@ -6,7 +6,7 @@ var MENU = {
             "name": "Hambúrguer gourmet",
             "title": "Pão de hambúrguer, 150g hambúrguer artesanal, bacon, queijo prato patê de alho, alface, tomate ketchup, maionese.",
             "dsc": "",
-            "price": 22.00
+            "price": 20.00
         },
         {
             "id": "06-Cupim",
@@ -14,12 +14,20 @@ var MENU = {
             "name": "Lanche cupim",
             "title": "Pão baguete, cupim, queijo, cebola, bacon, patê de alho, queijo prato, rúcula , tomate, ketchup, maionese.",
             "dsc": "",
-            "price": 36.00
+            "price": 35.00
         },
         {
             "id": "09-CalabresaEspecialM",
             "img": "assets/img/cardapio/pizzas/pernilx.jpg",
             "name": "Lanche Pernil",
+            "title": "Linguiça caipira, calda de abacaxi, tomate, rúcula,cebola roxa, queijo.",
+            "dsc": "",
+            "price": 30.00
+        },
+        {
+            "id": "09-CalabresaEspecialG",
+            "img": "assets/img/cardapio/pizzas/pernilx.jpg",
+            "name": "Lanche Agridoce",
             "title": "Pão baguete, Rúcula, cebola, pernil, vinagrete, barbecue.",
             "dsc": "",
             "price": 25.00
@@ -63,7 +71,7 @@ var MENU = {
             "name": "Hambúrguer simples",
             "title": "Pão de hambúrguer, hambúrguer tradicional, queijo mussarela, alface, tomate ketchup, maionese.",
             "dsc": "",
-            "price": 18.00
+            "price": 15.00
         },
         
         {
@@ -80,7 +88,7 @@ var MENU = {
             "name": "Hambúrguer Duplo",
             "title": "hambúrguer, alface, tomate, bacon, queijo.",
             "dsc": "",
-            "price": 20.00
+            "price": 18.00
         },
         {
             "id": "10-ContraFileM",
@@ -89,39 +97,6 @@ var MENU = {
             "title": "Pão baguete, Alface, tomate, cebola, coração, ketchup, maionese.",
             "dsc": "",
             "price": 30.00
-        },
-        {
-            "id": "20-ContraFileM",
-            "img": "assets/img/cardapio/pizzas/coracao.jg",
-            "name": "Fit peixe",
-            "title": "Filé de tilápia, rucúla, tomate, ketchup, maionese, queijo prato, cebola roxa.",
-            "dsc": "",
-            "price": 30.00
-        },
-
-        {
-            "id": "25-BauruM",
-            "img": "assets/img/cardapio/pizzas/gourmet.png",
-            "name": "Gourmet fit",
-            "title": "Pão de hambúrguer, 150g hambúrguer, ketchup, maionese,alface, tomate, ovo, queijo prato.",
-            "dsc": "",
-            "price": 28.00
-        },
-        {
-            "id": "26-BauruM",
-            "img": "assets/img/cardapio/pizzas/gourmet.png",
-            "name": "Gourmet triplo",
-            "title": "Pão de hambúrguer, 3 hambúrguer artesanal 150g, bacon, queijo prato,  patê de alho, alface, tomate, ketchup, maionese, anel de cebola.",
-            "dsc": "",
-            "price": 45.00
-        },
-        {
-            "id": "27-BauruM",
-            "img": "assets/img/cardapio/pizzas/gourmet.png",
-            "name": "Gourmet duplo",
-            "title": "Pão de hambúrguer,2 hambúrguer artesanal 150g, bacon, queijo prato, patê de alho, alface, tomate, ketchup, maionese, anel de cebola.",
-            "dsc": "",
-            "price": 35.00
         },
         
          {
@@ -139,6 +114,38 @@ var MENU = {
             "title": "Alface, tomate, milho, batata palha, salsicha,ketchup, maionese.",
             "dsc": "",
             "price": 16.00
+        },
+         {
+            "id": "13-Crocanteg",
+            "img": "assets/img/cardapio/pizzas/dg.jpeg",
+            "name": "Fit peixe",
+            "title": "Filé tilápia rúcula, tomate, ketchup, maionese, queijo prato, cebola roxa.",
+            "dsc": "",
+            "price": 36.00
+        },
+         {
+            "id": "14-Crocanteg",
+            "img": "assets/img/cardapio/pizzas/dg.jpeg",
+            "name": "Gourmet fit",
+            "title": "Pão de hamburguer, hambúrguer artesanal 150g, maionese,ketchup, alface, tomate, ovo, queijo prato.",
+            "dsc": "",
+            "price": 28.00
+        },
+         {
+            "id": "15-Crocanteg",
+            "img": "assets/img/cardapio/pizzas/dg.jpeg",
+            "name": "Gourmet triplo",
+            "title": "Pão de hamburguer, 3 hambúrguer artesanal 150g, bacon, queijo prato, patê de alho, alface, tomate, ketchup, maionese, anel de cebola.",
+            "dsc": "",
+            "price": 45.00
+        },
+         {
+            "id": "16-Crocanteg",
+            "img": "assets/img/cardapio/pizzas/dg.jpeg",
+            "name": "Gourmet duplo",
+            "title": "Pão de hamburguer, 2 hambúrguer artesanal 150g, bacon, queijo prato, patê de alho, alface, tomate, ketchup, maionese.",
+            "dsc": "",
+            "price": 35.00
         },
     ],
      "Pastel": [
@@ -190,7 +197,47 @@ var MENU = {
              "dsc": "",
             "price": 25.00,
                 
-        }]/*
+        },
+        {
+            "id": "42-confete",
+            "img": "assets/img/cardapio/pizzas/.png",
+            "name": "Frango a passarinho",
+            "title": "",
+             "dsc": "",
+            "price": 36.00,
+                
+        },
+        {
+            "id": "43-confete",
+            "img": "assets/img/cardapio/pizzas/.png",
+            "name": "Anel de cebola",
+            "title": "",
+             "dsc": "",
+            "price": 26.00,
+                
+        },
+        {
+            "id": "44-confete",
+            "img": "assets/img/cardapio/pizzas/.png",
+            "name": "Mandioca",
+            "title": "",
+             "dsc": "",
+            "price": 22.00,
+                
+        },
+        {
+            "id": "45-confete",
+            "img": "assets/img/cardapio/pizzas/.png",
+            "name": "Panceta",
+            "title": "",
+             "dsc": "",
+            "price": 40.00,
+                
+        },
+    
+    
+    
+    ]/*
         {
             "id": "43-napolitana",
             "img": "assets/img/cardapio/pizzas/pizzaDoce.webp",
@@ -435,7 +482,47 @@ var MENU = {
             "name": "Suco de laranja",
             "title": "Suco natural 300ml",
             "dsc": "",
-            "price": 6.00
+            "price": 12.00
+        },
+        {
+            "id": "cerveja-skol-600ml",
+            "img": "assets/img/cardapio/sucolaranj.png",
+            "name": "Suco de laranja com acerola",
+            "title": "Suco natural C/ água ou leite 300ml",
+            "dsc": "",
+            "price": 12.00
+        },
+        {
+            "id": "cerveja-skol-600ml",
+            "img": "assets/img/cardapio/sucolaranj.png",
+            "name": "Suco de Abacaxi",
+            "title": "Suco natural C/ água ou leite 300ml",
+            "dsc": "",
+            "price": 12.00
+        },
+        {
+            "id": "cerveja-skol-610ml",
+            "img": "assets/img/cardapio/sucolaranj.png",
+            "name": "Suco de Abacaxi com hortelã",
+            "title": "Suco natural C/ água ou leite 300ml",
+            "dsc": "",
+            "price": 12.00
+        },
+        {
+            "id": "cerveja-skol-600ml",
+            "img": "assets/img/cardapio/sucolaranj.png",
+            "name": "Suco de Maracuja",
+            "title": "Suco natural C/ água ou leite 300ml",
+            "dsc": "",
+            "price": 12.00
+        },
+        {
+            "id": "cerveja-skol-600ml",
+            "img": "assets/img/cardapio/sucolaranj.png",
+            "name": "Suco de Morango",
+            "title": "Suco natural C/ água ou leite 300ml",
+            "dsc": "",
+            "price": 13.00
         },
         {
             "id": "agua-sem-gas",
