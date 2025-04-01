@@ -121,7 +121,7 @@ var MENU = {
             "name": "Fit peixe",
             "title": "Filé tilápia rúcula, tomate, ketchup, maionese, queijo prato, cebola roxa.",
             "dsc": "",
-            "price": 39.00
+            "price": 38.00
         },
          {
             "id": "14-Crocanteg",
