@@ -14,7 +14,7 @@ var MENU = {
             "name": "Lanche cupim",
             "title": "Pão baguete, cupim, queijo, cebola, bacon, patê de alho, queijo prato, rúcula , tomate, ketchup, maionese.",
             "dsc": "",
-            "price": 35.00
+            "price": 36.00
         },
         {
             "id": "09-CalabresaEspecialM",
@@ -30,7 +30,7 @@ var MENU = {
             "name": "Lanche Agridoce",
             "title": "Pão baguete, Rúcula, cebola, pernil, vinagrete, barbecue.",
             "dsc": "",
-            "price": 25.00
+            "price": 35.00
         },
         {
             "id": "01-AmericanaM",
@@ -71,7 +71,7 @@ var MENU = {
             "name": "Hambúrguer simples",
             "title": "Pão de hambúrguer, hambúrguer tradicional, queijo mussarela, alface, tomate ketchup, maionese.",
             "dsc": "",
-            "price": 15.00
+            "price": 18.00
         },
         
         {
@@ -88,7 +88,7 @@ var MENU = {
             "name": "Hambúrguer Duplo",
             "title": "hambúrguer, alface, tomate, bacon, queijo.",
             "dsc": "",
-            "price": 18.00
+            "price": 20.00
         },
         {
             "id": "10-ContraFileM",
@@ -121,7 +121,7 @@ var MENU = {
             "name": "Fit peixe",
             "title": "Filé tilápia rúcula, tomate, ketchup, maionese, queijo prato, cebola roxa.",
             "dsc": "",
-            "price": 36.00
+            "price": 39.00
         },
          {
             "id": "14-Crocanteg",
