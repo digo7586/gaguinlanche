@@ -20,7 +20,7 @@ var MENU = {
             "id": "09-CalabresaEspecialM",
             "img": "assets/img/cardapio/pizzas/pernilx.jpg",
             "name": "Lanche Pernil",
-            "title": "Linguiça caipira, calda de abacaxi, tomate, rúcula,cebola roxa, queijo.",
+            "title": "Pão baguete, Rúcula, cebola, pernil, vinagrete, barbecue.",
             "dsc": "",
             "price": 30.00
         },
@@ -28,7 +28,8 @@ var MENU = {
             "id": "09-CalabresaEspecialG",
             "img": "assets/img/cardapio/pizzas/agri.jpg",
             "name": "Lanche Agridoce",
-            "title": "Pão baguete, Rúcula, cebola, pernil, vinagrete, barbecue.",
+            "title": "Linguiça caipira, calda de abacaxi, tomate, rúcula,cebola roxa, queijo.",
+            
             "dsc": "",
             "price": 35.00
         },
