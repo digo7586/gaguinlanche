@@ -22,7 +22,7 @@ var MENU = {
             "name": "Lanche Pernil",
             "title": "Pão baguete, Rúcula, cebola, pernil, vinagrete, barbecue.",
             "dsc": "",
-            "price": 30.00
+            "price": 25.00
         },
         {
             "id": "09-CalabresaEspecialG",
