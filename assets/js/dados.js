@@ -18,7 +18,7 @@ var MENU = {
         },
         {
             "id": "09-CalabresaEspecialM",
-            "img": "assets/img/cardapio/pizzas/pernil.jpg",
+            "img": "assets/img/cardapio/pizzas/pernil.png",
             "name": "Lanche Pernil",
             "title": "Pão baguete, Rúcula, cebola, pernil, vinagrete, barbecue.",
             "dsc": "",
