@@ -6,7 +6,7 @@ var MENU = {
             "name": "Hambúrguer gourmet",
             "title": "Pão de hambúrguer, 150g hambúrguer artesanal, bacon, queijo prato patê de alho, alface, tomate ketchup, maionese.",
             "dsc": "",
-            "price": 20.00
+            "price": 22.00
         },
         {
             "id": "06-Cupim",
