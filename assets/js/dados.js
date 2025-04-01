@@ -26,7 +26,7 @@ var MENU = {
         },
         {
             "id": "09-CalabresaEspecialG",
-            "img": "assets/img/cardapio/pizzas/pernilx.jpg",
+            "img": "assets/img/cardapio/pizzas/agri.jpg",
             "name": "Lanche Agridoce",
             "title": "Pão baguete, Rúcula, cebola, pernil, vinagrete, barbecue.",
             "dsc": "",
