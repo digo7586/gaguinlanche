@@ -240,7 +240,7 @@ var MENU = {
 
         {
             "id": "cerveja-skol-600ml",
-            "img": "assets/img/cardapio/prats.png",
+            "img": "assets/img/cardapio/prats1.png",
             "name": "Suco de laranja Prats",
             "title": "Suco natural 300ml",
             "dsc": "",
