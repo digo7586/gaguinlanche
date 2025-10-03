@@ -246,6 +246,15 @@ var MENU = {
             "dsc": "",
             "price": 7.50
         },
+
+        {
+            "id": "suco-fruitz",
+            "img": "assets/img/cardapio/fruitz.webp",
+            "name": "Suco Fruitz",
+            "title": "Suco de uva 300ml",
+            "dsc": "",
+            "price": 7.50
+        },
        
         {
             "id": "agua-sem-gas",
