@@ -229,9 +229,18 @@ var MENU = {
             "dsc": "",
             "price": 6.00
         },
+         {
+            "id": "coca-2l",
+            "img": "assets/img/cardapio/coca2.png",
+           "name": "Coca cola 2L", 
+            "title": "Coca cola 2L",
+            "dsc": "",
+            "price": 18.00
+        },
+
         {
             "id": "cerveja-skol-600ml",
-            "img": "assets/img/cardapio/sucolaranja.png",
+            "img": "assets/img/cardapio/prats.png",
             "name": "Suco de laranja Prats",
             "title": "Suco natural 300ml",
             "dsc": "",
@@ -274,13 +283,6 @@ var MENU = {
             "price": 10.00
         }, 
 
-        {
-            "id": "coca-2l",
-            "img": "assets/img/cardapio/coca2.png",
-           "name": "Coca cola 2L", 
-            "title": "Coca cola 2L",
-            "dsc": "",
-            "price": 18.00
-        },
+       
     ]
 }
