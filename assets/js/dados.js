@@ -202,7 +202,7 @@ var MENU = {
             "name": "Coca cola",
             "title": "Refrigerante em Lata 350ml.",
             "dsc": "",
-            "price": 5.00
+            "price": 6.00
         },
         {
             "id": "suco-del-valle",
@@ -210,7 +210,7 @@ var MENU = {
             "name": "Coca zero",
             "title": "Refrigerante em Lata 350ml",
             "dsc": "",
-            "price": 5.00
+            "price": 6.00
         }, 
         {
             "id": "cervejas-long-neck",
@@ -218,7 +218,7 @@ var MENU = {
             "name": "Fanta",
             "title": "Refrigerante em Lata 350ml",
             "dsc": "",
-            "price": 5.00
+            "price": 6.00
         },
 
         {
@@ -227,56 +227,17 @@ var MENU = {
             "name": "Sprite",
             "title": "Refrigerante em Lata 350ml",
             "dsc": "",
-            "price": 5.00
+            "price": 6.00
         },
         {
             "id": "cerveja-skol-600ml",
             "img": "assets/img/cardapio/sucolaranja.png",
-            "name": "Suco de laranja",
+            "name": "Suco de laranja Prats",
             "title": "Suco natural 300ml",
             "dsc": "",
-            "price": 12.00
+            "price": 7.50
         },
-        {
-            "id": "cerveja-skol-600ml",
-            "img": "assets/img/cardapio/sucolaranj.png",
-            "name": "Suco de laranja com acerola",
-            "title": "Suco natural C/ água ou leite 300ml",
-            "dsc": "",
-            "price": 12.00
-        },
-        {
-            "id": "cerveja-skol-600ml",
-            "img": "assets/img/cardapio/sucolaranj.png",
-            "name": "Suco de Abacaxi",
-            "title": "Suco natural C/ água ou leite 300ml",
-            "dsc": "",
-            "price": 12.00
-        },
-        {
-            "id": "cerveja-skol-610ml",
-            "img": "assets/img/cardapio/sucolaranj.png",
-            "name": "Suco de Abacaxi com hortelã",
-            "title": "Suco natural C/ água ou leite 300ml",
-            "dsc": "",
-            "price": 12.00
-        },
-        {
-            "id": "cerveja-skol-600ml",
-            "img": "assets/img/cardapio/sucolaranj.png",
-            "name": "Suco de Maracuja",
-            "title": "Suco natural C/ água ou leite 300ml",
-            "dsc": "",
-            "price": 12.00
-        },
-        {
-            "id": "cerveja-skol-600ml",
-            "img": "assets/img/cardapio/sucolaranj.png",
-            "name": "Suco de Morango",
-            "title": "Suco natural C/ água ou leite 300ml",
-            "dsc": "",
-            "price": 13.00
-        },
+       
         {
             "id": "agua-sem-gas",
             "img": "assets/img/cardapio/agua.png",
@@ -291,7 +252,7 @@ var MENU = {
             "name": "Skol",
             "title": "Cerveja lata 350ml",
             "dsc": "",
-            "price": 5.50
+            "price": 7.00
         },
         
         {
@@ -300,7 +261,7 @@ var MENU = {
             "name": "Antarctica",
             "title": "Cerveja lata 350ml",
             "dsc": "",
-            "price": 5.50
+            "price": 7.00
         },
         
         
@@ -312,5 +273,14 @@ var MENU = {
             "dsc": "",
             "price": 10.00
         }, 
+
+        {
+            "id": "coca-2l",
+            "img": "assets/img/cardapio/coca2.png",
+           "name": "Coca cola 2L", 
+            "title": "Coca cola 2L",
+            "dsc": "",
+            "price": 18.00
+        },
     ]
 }
